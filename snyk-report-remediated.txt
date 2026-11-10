@@ -1,0 +1,391 @@
+Testing  (package.json) ...
+
+Tested 633 dependencies for known issues, found 40 issues, 66 vulnerable paths.
+
+Open Security issues: 40
+
+ ✗ [LOW] Information Exposure
+   Finding ID: SNYK-JS-HBS-1566555
+   Info: https://snyk.io/vuln/SNYK-JS-HBS-1566555
+   Introduced by: hbs
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > hbs@4.4.0
+
+ ✗ [LOW] Regular Expression Denial of Service (ReDoS)
+   Finding ID: npm:moment:20170905
+   Info: https://snyk.io/vuln/npm:moment:20170905
+   Introduced by: moment
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > express-jwt@0.1.3 > jsonwebtoken@0.1.0 > moment@2.0.0
+
+ ✗ [MEDIUM] Infinite loop
+   Finding ID: SNYK-JS-FILETYPE-15456217
+   Info: https://snyk.io/vuln/SNYK-JS-FILETYPE-15456217
+   Introduced by: file-type
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > file-type@16.5.4
+
+ ✗ [MEDIUM] Allocation of Resources Without Limits or Throttling
+   Finding ID: SNYK-JS-GLOB-22112102
+   Info: https://snyk.io/vuln/SNYK-JS-GLOB-22112102
+   Introduced by: glob
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > @cyclonedx/cyclonedx-npm@4.2.1 > libxmljs2@0.37.0 > node-gyp@11.5.0 > make-fetch-happen@14.0.3 > cacache@19.0.1 > glob@10.5.0
+
+ ✗ [MEDIUM] Missing Release of Resource after Effective Lifetime
+   Finding ID: SNYK-JS-INFLIGHT-6095116
+   Info: https://snyk.io/vuln/SNYK-JS-INFLIGHT-6095116
+   Introduced by: inflight
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > @npmcli/move-file@1.1.2 > rimraf@3.0.2 > glob@7.2.3 > inflight@1.0.6
+
+ ✗ [MEDIUM] Improper Authentication
+   Finding ID: SNYK-JS-JSONWEBTOKEN-3180022
+   Info: https://snyk.io/vuln/SNYK-JS-JSONWEBTOKEN-3180022
+   Introduced by: jsonwebtoken
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > express-jwt@0.1.3 > jsonwebtoken@0.1.0
+
+ ✗ [MEDIUM] Improper Restriction of Security Token Assignment
+   Finding ID: SNYK-JS-JSONWEBTOKEN-3180024
+   Info: https://snyk.io/vuln/SNYK-JS-JSONWEBTOKEN-3180024
+   Introduced by: jsonwebtoken
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > express-jwt@0.1.3 > jsonwebtoken@0.1.0
+
+ ✗ [MEDIUM] Use of a Broken or Risky Cryptographic Algorithm
+   Finding ID: SNYK-JS-JSONWEBTOKEN-3180026
+   Info: https://snyk.io/vuln/SNYK-JS-JSONWEBTOKEN-3180026
+   Introduced by: jsonwebtoken
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > express-jwt@0.1.3 > jsonwebtoken@0.1.0
+
+ ✗ [MEDIUM] Regular Expression Denial of Service (ReDoS)
+   Finding ID: SNYK-JS-LODASH-1018905
+   Info: https://snyk.io/vuln/SNYK-JS-LODASH-1018905
+   Introduced by: lodash
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2 > lodash@2.4.2
+
+ ✗ [MEDIUM] Regular Expression Denial of Service (ReDoS)
+   Finding ID: SNYK-JS-LODASH-73639
+   Info: https://snyk.io/vuln/SNYK-JS-LODASH-73639
+   Introduced by: lodash
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2 > lodash@2.4.2
+
+ ✗ [MEDIUM] Asymmetric Resource Consumption (Amplification)
+   Finding ID: SNYK-JS-MINIMATCH-22111072
+   Info: https://snyk.io/vuln/SNYK-JS-MINIMATCH-22111072
+   Introduced by: minimatch
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > @npmcli/move-file@1.1.2 > rimraf@3.0.2 > glob@7.2.3 > minimatch@3.1.5
+
+ ✗ [MEDIUM] Sandbox Bypass
+   Finding ID: SNYK-JS-NOTEVIL-2385946
+   Info: https://snyk.io/vuln/SNYK-JS-NOTEVIL-2385946
+   Introduced by: notevil
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > notevil@1.3.3
+
+ ✗ [MEDIUM] Validation Bypass
+   Finding ID: SNYK-JS-SANITIZEHTML-1070780
+   Info: https://snyk.io/vuln/SNYK-JS-SANITIZEHTML-1070780
+   Introduced by: sanitize-html
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+
+ ✗ [MEDIUM] Access Restriction Bypass
+   Finding ID: SNYK-JS-SANITIZEHTML-1070786
+   Info: https://snyk.io/vuln/SNYK-JS-SANITIZEHTML-1070786
+   Introduced by: sanitize-html
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+
+ ✗ [MEDIUM] Cross-site Scripting (XSS)
+   Finding ID: SNYK-JS-SANITIZEHTML-16697325
+   Info: https://snyk.io/vuln/SNYK-JS-SANITIZEHTML-16697325
+   Introduced by: sanitize-html
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+
+ ✗ [MEDIUM] Improper Encoding or Escaping of Output
+   Finding ID: SNYK-JS-SANITIZEHTML-16759743
+   Info: https://snyk.io/vuln/SNYK-JS-SANITIZEHTML-16759743
+   Introduced by: sanitize-html
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+
+ ✗ [MEDIUM] Cross-site Scripting (XSS)
+   Finding ID: SNYK-JS-SANITIZEHTML-17337018
+   Info: https://snyk.io/vuln/SNYK-JS-SANITIZEHTML-17337018
+   Introduced by: sanitize-html
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+
+ ✗ [MEDIUM] Cross-site Scripting (XSS)
+   Finding ID: SNYK-JS-SANITIZEHTML-18913500
+   Info: https://snyk.io/vuln/SNYK-JS-SANITIZEHTML-18913500
+   Introduced by: sanitize-html
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+
+ ✗ [MEDIUM] Cross-site Scripting (XSS)
+   Finding ID: SNYK-JS-SANITIZEHTML-21280765
+   Info: https://snyk.io/vuln/SNYK-JS-SANITIZEHTML-21280765
+   Introduced by: sanitize-html
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+
+ ✗ [MEDIUM] Cross-site Scripting (XSS)
+   Finding ID: SNYK-JS-SANITIZEHTML-21281012
+   Info: https://snyk.io/vuln/SNYK-JS-SANITIZEHTML-21281012
+   Introduced by: sanitize-html
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+
+ ✗ [MEDIUM] Regular Expression Denial of Service (ReDoS)
+   Finding ID: SNYK-JS-SANITIZEHTML-2957526
+   Info: https://snyk.io/vuln/SNYK-JS-SANITIZEHTML-2957526
+   Introduced by: sanitize-html
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+
+ ✗ [MEDIUM] Cross-site Scripting (XSS)
+   Finding ID: SNYK-JS-SANITIZEHTML-585892
+   Info: https://snyk.io/vuln/SNYK-JS-SANITIZEHTML-585892
+   Introduced by: sanitize-html
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+
+ ✗ [MEDIUM] Information Exposure
+   Finding ID: SNYK-JS-SANITIZEHTML-6256334
+   Info: https://snyk.io/vuln/SNYK-JS-SANITIZEHTML-6256334
+   Introduced by: sanitize-html
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+
+ ✗ [MEDIUM] Directory Traversal
+   Finding ID: SNYK-JS-TAR-15032660
+   Info: https://snyk.io/vuln/SNYK-JS-TAR-15032660
+   Introduced by: tar
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1
+
+ ✗ [MEDIUM] Improper Handling of Unicode Encoding
+   Finding ID: SNYK-JS-TAR-15038581
+   Info: https://snyk.io/vuln/SNYK-JS-TAR-15038581
+   Introduced by: tar
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1
+
+ ✗ [MEDIUM] Directory Traversal
+   Finding ID: SNYK-JS-TAR-15127355
+   Info: https://snyk.io/vuln/SNYK-JS-TAR-15127355
+   Introduced by: tar
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1
+
+ ✗ [MEDIUM] Interpretation Conflict
+   Finding ID: SNYK-JS-TAR-17342362
+   Info: https://snyk.io/vuln/SNYK-JS-TAR-17342362
+   Introduced by: tar
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1
+
+ ✗ [MEDIUM] Incorrect Type Conversion or Cast
+   Finding ID: SNYK-JS-TAR-17909104
+   Info: https://snyk.io/vuln/SNYK-JS-TAR-17909104
+   Introduced by: tar
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1
+
+ ✗ [MEDIUM] Uncaught Exception
+   Finding ID: SNYK-JS-TAR-17909225
+   Info: https://snyk.io/vuln/SNYK-JS-TAR-17909225
+   Introduced by: tar
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1
+
+ ✗ [MEDIUM] Uncontrolled Recursion
+   Finding ID: SNYK-JS-TAR-18319500
+   Info: https://snyk.io/vuln/SNYK-JS-TAR-18319500
+   Introduced by: tar
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1
+
+ ✗ [MEDIUM] Incorrect Control Flow Scoping
+   Finding ID: SNYK-JS-TOOTALLNATEONCE-15250612
+   Info: https://snyk.io/vuln/SNYK-JS-TOOTALLNATEONCE-15250612
+   Introduced by: @tootallnate/once
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > http-proxy-agent@4.0.1 > @tootallnate/once@1.1.2
+
+ ✗ [MEDIUM] Improper Encoding or Escaping of Output
+   Finding ID: SNYK-JS-URIJS-19963961
+   Info: https://snyk.io/vuln/SNYK-JS-URIJS-19963961
+   Introduced by: uri-js
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > @cyclonedx/cyclonedx-npm@4.2.1 > ajv-formats-draft2019@1.6.1 > uri-js@4.4.1
+
+ ✗ [MEDIUM] Uncaught Exception
+   Finding ID: SNYK-JS-URIJS-20341609
+   Info: https://snyk.io/vuln/SNYK-JS-URIJS-20341609
+   Introduced by: uri-js
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > @cyclonedx/cyclonedx-npm@4.2.1 > ajv-formats-draft2019@1.6.1 > uri-js@4.4.1
+
+ ✗ [MEDIUM] Improper Validation of Specified Index, Position, or Offset in Input
+   Finding ID: SNYK-JS-UUID-16133035
+   Info: https://snyk.io/vuln/SNYK-JS-UUID-16133035
+   Introduced by: uuid
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sequelize@6.37.8 > uuid@8.3.2
+
+ ✗ [MEDIUM] Prototype Pollution
+   Finding ID: npm:lodash:20180130
+   Info: https://snyk.io/vuln/npm:lodash:20180130
+   Introduced by: lodash
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2 > lodash@2.4.2
+
+ ✗ [MEDIUM] Regular Expression Denial of Service (ReDoS)
+   Finding ID: npm:moment:20160126
+   Info: https://snyk.io/vuln/npm:moment:20160126
+   Introduced by: moment
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > express-jwt@0.1.3 > jsonwebtoken@0.1.0 > moment@2.0.0
+
+ ✗ [MEDIUM] Regular Expression Denial of Service (ReDoS)
+   Finding ID: npm:moment:20161019
+   Info: https://snyk.io/vuln/npm:moment:20161019
+   Introduced by: moment
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > express-jwt@0.1.3 > jsonwebtoken@0.1.0 > moment@2.0.0
+
+ ✗ [MEDIUM] Cross-site Scripting (XSS)
+   Finding ID: npm:sanitize-html:20141024
+   Info: https://snyk.io/vuln/npm:sanitize-html:20141024
+   Introduced by: sanitize-html
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+
+ ✗ [MEDIUM] Cross-site Scripting (XSS)
+   Finding ID: npm:sanitize-html:20160801
+   Info: https://snyk.io/vuln/npm:sanitize-html:20160801
+   Introduced by: sanitize-html
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+
+ ✗ [MEDIUM] Cross-site Scripting (XSS)
+   Finding ID: npm:sanitize-html:20161026
+   Info: https://snyk.io/vuln/npm:sanitize-html:20161026
+   Introduced by: sanitize-html
+   Introduced through: juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+
+Issues to fix by upgrading:
+
+  Upgrade express-jwt@0.1.3 to express-jwt@7.7.8 to fix
+  ✗ Regular Expression Denial of Service (ReDoS) [LOW] [https://security.snyk.io/vuln/npm:moment:20170905] in moment@2.0.0
+    introduced by juice-shop@20.4.0-SNAPSHOT > express-jwt@0.1.3 > jsonwebtoken@0.1.0 > moment@2.0.0
+  ✗ Improper Authentication [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-JSONWEBTOKEN-3180022] in jsonwebtoken@0.1.0
+    introduced by juice-shop@20.4.0-SNAPSHOT > express-jwt@0.1.3 > jsonwebtoken@0.1.0 and 1 other path
+  ✗ Improper Restriction of Security Token Assignment [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-JSONWEBTOKEN-3180024] in jsonwebtoken@0.1.0
+    introduced by juice-shop@20.4.0-SNAPSHOT > express-jwt@0.1.3 > jsonwebtoken@0.1.0 and 1 other path
+  ✗ Use of a Broken or Risky Cryptographic Algorithm [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-JSONWEBTOKEN-3180026] in jsonwebtoken@0.1.0
+    introduced by juice-shop@20.4.0-SNAPSHOT > express-jwt@0.1.3 > jsonwebtoken@0.1.0 and 1 other path
+  ✗ Regular Expression Denial of Service (ReDoS) [MEDIUM] [https://security.snyk.io/vuln/npm:moment:20160126] in moment@2.0.0
+    introduced by juice-shop@20.4.0-SNAPSHOT > express-jwt@0.1.3 > jsonwebtoken@0.1.0 > moment@2.0.0
+  ✗ Regular Expression Denial of Service (ReDoS) [MEDIUM] [https://security.snyk.io/vuln/npm:moment:20161019] in moment@2.0.0
+    introduced by juice-shop@20.4.0-SNAPSHOT > express-jwt@0.1.3 > jsonwebtoken@0.1.0 > moment@2.0.0
+
+  Upgrade file-type@16.5.4 to file-type@21.3.1 to fix
+  ✗ Infinite loop [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-FILETYPE-15456217] in file-type@16.5.4
+    introduced by juice-shop@20.4.0-SNAPSHOT > file-type@16.5.4
+
+  Upgrade jsonwebtoken@0.4.0 to jsonwebtoken@9.0.0 to fix
+  ✗ Improper Authentication [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-JSONWEBTOKEN-3180022] in jsonwebtoken@0.1.0
+    introduced by juice-shop@20.4.0-SNAPSHOT > express-jwt@0.1.3 > jsonwebtoken@0.1.0 and 1 other path
+  ✗ Improper Restriction of Security Token Assignment [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-JSONWEBTOKEN-3180024] in jsonwebtoken@0.1.0
+    introduced by juice-shop@20.4.0-SNAPSHOT > express-jwt@0.1.3 > jsonwebtoken@0.1.0 and 1 other path
+  ✗ Use of a Broken or Risky Cryptographic Algorithm [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-JSONWEBTOKEN-3180026] in jsonwebtoken@0.1.0
+    introduced by juice-shop@20.4.0-SNAPSHOT > express-jwt@0.1.3 > jsonwebtoken@0.1.0 and 1 other path
+
+  Upgrade sanitize-html@1.4.2 to sanitize-html@2.18.0 to fix
+  ✗ Regular Expression Denial of Service (ReDoS) [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-LODASH-1018905] in lodash@2.4.2
+    introduced by juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2 > lodash@2.4.2
+  ✗ Regular Expression Denial of Service (ReDoS) [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-LODASH-73639] in lodash@2.4.2
+    introduced by juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2 > lodash@2.4.2
+  ✗ Validation Bypass [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-SANITIZEHTML-1070780] in sanitize-html@1.4.2
+    introduced by juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+  ✗ Access Restriction Bypass [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-SANITIZEHTML-1070786] in sanitize-html@1.4.2
+    introduced by juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+  ✗ Cross-site Scripting (XSS) [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-SANITIZEHTML-16697325] in sanitize-html@1.4.2
+    introduced by juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+  ✗ Improper Encoding or Escaping of Output [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-SANITIZEHTML-16759743] in sanitize-html@1.4.2
+    introduced by juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+  ✗ Cross-site Scripting (XSS) [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-SANITIZEHTML-17337018] in sanitize-html@1.4.2
+    introduced by juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+  ✗ Cross-site Scripting (XSS) [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-SANITIZEHTML-18913500] in sanitize-html@1.4.2
+    introduced by juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+  ✗ Cross-site Scripting (XSS) [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-SANITIZEHTML-21280765] in sanitize-html@1.4.2
+    introduced by juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+  ✗ Cross-site Scripting (XSS) [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-SANITIZEHTML-21281012] in sanitize-html@1.4.2
+    introduced by juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+  ✗ Regular Expression Denial of Service (ReDoS) [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-SANITIZEHTML-2957526] in sanitize-html@1.4.2
+    introduced by juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+  ✗ Cross-site Scripting (XSS) [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-SANITIZEHTML-585892] in sanitize-html@1.4.2
+    introduced by juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+  ✗ Information Exposure [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-SANITIZEHTML-6256334] in sanitize-html@1.4.2
+    introduced by juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+  ✗ Prototype Pollution [MEDIUM] [https://security.snyk.io/vuln/npm:lodash:20180130] in lodash@2.4.2
+    introduced by juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2 > lodash@2.4.2
+  ✗ Cross-site Scripting (XSS) [MEDIUM] [https://security.snyk.io/vuln/npm:sanitize-html:20141024] in sanitize-html@1.4.2
+    introduced by juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+  ✗ Cross-site Scripting (XSS) [MEDIUM] [https://security.snyk.io/vuln/npm:sanitize-html:20160801] in sanitize-html@1.4.2
+    introduced by juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+  ✗ Cross-site Scripting (XSS) [MEDIUM] [https://security.snyk.io/vuln/npm:sanitize-html:20161026] in sanitize-html@1.4.2
+    introduced by juice-shop@20.4.0-SNAPSHOT > sanitize-html@1.4.2
+
+  Upgrade sqlite3@5.1.7 to sqlite3@6.0.1 to fix
+  ✗ Directory Traversal [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-TAR-15032660] in tar@6.2.1
+    introduced by juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1 and 2 other paths
+  ✗ Improper Handling of Unicode Encoding [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-TAR-15038581] in tar@6.2.1
+    introduced by juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1 and 2 other paths
+  ✗ Directory Traversal [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-TAR-15127355] in tar@6.2.1
+    introduced by juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1 and 2 other paths
+  ✗ Interpretation Conflict [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-TAR-17342362] in tar@6.2.1
+    introduced by juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1 and 2 other paths
+  ✗ Incorrect Type Conversion or Cast [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-TAR-17909104] in tar@6.2.1
+    introduced by juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1 and 2 other paths
+  ✗ Uncaught Exception [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-TAR-17909225] in tar@6.2.1
+    introduced by juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1 and 2 other paths
+  ✗ Uncontrolled Recursion [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-TAR-18319500] in tar@6.2.1
+    introduced by juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1 and 2 other paths
+
+Issues with no direct upgrade or patch:
+  ✗ Information Exposure [LOW] [https://security.snyk.io/vuln/SNYK-JS-HBS-1566555] in hbs@4.4.0
+    introduced by juice-shop@20.4.0-SNAPSHOT > hbs@4.4.0
+  ✗ Allocation of Resources Without Limits or Throttling [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-GLOB-22112102] in glob@10.5.0
+    introduced by juice-shop@20.4.0-SNAPSHOT > @cyclonedx/cyclonedx-npm@4.2.1 > libxmljs2@0.37.0 > node-gyp@11.5.0 > make-fetch-happen@14.0.3 > cacache@19.0.1 > glob@10.5.0
+  This issue was fixed in: 13.0.7, 14.0.2
+  ✗ Missing Release of Resource after Effective Lifetime [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-INFLIGHT-6095116] in inflight@1.0.6
+    introduced by juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > @npmcli/move-file@1.1.2 > rimraf@3.0.2 > glob@7.2.3 > inflight@1.0.6 and 4 other paths
+  ✗ Asymmetric Resource Consumption (Amplification) [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-MINIMATCH-22111072] in minimatch@3.1.5
+    introduced by juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > @npmcli/move-file@1.1.2 > rimraf@3.0.2 > glob@7.2.3 > minimatch@3.1.5 and 5 other paths
+  This issue was fixed in: 11.0.1
+  ✗ Sandbox Bypass [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-NOTEVIL-2385946] in notevil@1.3.3
+    introduced by juice-shop@20.4.0-SNAPSHOT > notevil@1.3.3
+  ✗ Directory Traversal [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-TAR-15032660] in tar@6.2.1
+    introduced by juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1 and 2 other paths
+  This issue was fixed in: 7.5.3
+  ✗ Improper Handling of Unicode Encoding [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-TAR-15038581] in tar@6.2.1
+    introduced by juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1 and 2 other paths
+  This issue was fixed in: 7.5.4
+  ✗ Directory Traversal [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-TAR-15127355] in tar@6.2.1
+    introduced by juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1 and 2 other paths
+  This issue was fixed in: 7.5.7
+  ✗ Interpretation Conflict [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-TAR-17342362] in tar@6.2.1
+    introduced by juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1 and 2 other paths
+  This issue was fixed in: 7.5.16
+  ✗ Incorrect Type Conversion or Cast [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-TAR-17909104] in tar@6.2.1
+    introduced by juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1 and 2 other paths
+  This issue was fixed in: 7.5.18
+  ✗ Uncaught Exception [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-TAR-17909225] in tar@6.2.1
+    introduced by juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1 and 2 other paths
+  This issue was fixed in: 7.5.17
+  ✗ Uncontrolled Recursion [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-TAR-18319500] in tar@6.2.1
+    introduced by juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.1 and 2 other paths
+  This issue was fixed in: 7.5.21
+  ✗ Incorrect Control Flow Scoping [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-TOOTALLNATEONCE-15250612] in @tootallnate/once@1.1.2
+    introduced by juice-shop@20.4.0-SNAPSHOT > sqlite3@5.1.7 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > http-proxy-agent@4.0.1 > @tootallnate/once@1.1.2
+  This issue was fixed in: 2.0.1, 3.0.1
+  ✗ Improper Encoding or Escaping of Output [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-URIJS-19963961] in uri-js@4.4.1
+    introduced by juice-shop@20.4.0-SNAPSHOT > @cyclonedx/cyclonedx-npm@4.2.1 > ajv-formats-draft2019@1.6.1 > uri-js@4.4.1
+  ✗ Uncaught Exception [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-URIJS-20341609] in uri-js@4.4.1
+    introduced by juice-shop@20.4.0-SNAPSHOT > @cyclonedx/cyclonedx-npm@4.2.1 > ajv-formats-draft2019@1.6.1 > uri-js@4.4.1
+  ✗ Improper Validation of Specified Index, Position, or Offset in Input [MEDIUM] [https://security.snyk.io/vuln/SNYK-JS-UUID-16133035] in uuid@8.3.2
+    introduced by juice-shop@20.4.0-SNAPSHOT > sequelize@6.37.8 > uuid@8.3.2
+  This issue was fixed in: 11.1.1, 14.0.0
+
+╭──────────────────────────────────────────────────────────────────────────────────╮
+│ Test Summary                                                                     │
+│                                                                                  │
+│   Organization:      minkqwqw                                                    │
+│   Test type:         Software Composition Analysis                               │
+│   Project name:      juice-shop                                                  │
+│   Project path:      /home/minkwaq/kuliah/devsec/pertemuan_7/tugas/juice-shop    │
+│   Target file:       package.json                                                │
+│                                                                                  │
+│   Total security issues: 67                                                      │
+│   Ignored: 27 [ 1 CRITICAL  26 HIGH  0 MEDIUM  0 LOW ]                           │
+│   Open   : 40 [ 0 CRITICAL  0 HIGH  38 MEDIUM  2 LOW ]                           │
+╰──────────────────────────────────────────────────────────────────────────────────╯
+
+
+💡 Tip
+
+   To view ignored issues, use the --include-ignores option.
+                                                            
+
