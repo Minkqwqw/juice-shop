@@ -109,3 +109,15 @@ ignore:
     - '*':
         reason: 'Sengaja dipertahankan untuk tantangan Forgeable Public/Private Tokens pada Juice Shop.'
         expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-JSYAML-17900054:
+    - '*':
+        reason: 'Transitive build dependency for cycloneDX/xmlbuilder, safe in build context.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-JSYAML-18593780:
+    - '*':
+        reason: 'Transitive build dependency for cycloneDX/xmlbuilder, safe in build context.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-JSYAML-19496768:
+    - '*':
+        reason: 'Transitive build dependency for cycloneDX/xmlbuilder, safe in build context.'
+        expires: 2026-12-31T23:59:59.000Z
