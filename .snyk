@@ -1,0 +1,111 @@
+# Snyk (https://snyk.io) policy file
+version: v1.25.0
+ignore:
+  SNYK-JS-MARSDB-480405:
+    - '*':
+        reason: 'Sengaja dipertahankan untuk tantangan kerentanan NoSQL Injection pada OWASP Juice Shop. Tidak tersedia versi patch dari vendor.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-EXPRESSJWT-575022:
+    - '*':
+        reason: 'Komponen tantangan keamanan autentikasi JWT pada Juice Shop.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-JWS-14188253:
+    - '*':
+        reason: 'Komponen penunjang JWT challenge (signature verification bypass).'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-BASICFTP-20419408:
+    - '*':
+        reason: 'Dependensi transitif internal untuk simulasi FTP client.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-CYCLONEDXCYCLONEDXNPM-17817903:
+    - '*':
+        reason: 'Dev/build tool utility untuk SBOM generation, tidak terekspos di production runtime.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-CYCLONEDXCYCLONEDXNPM-20158546:
+    - '*':
+        reason: 'Dev/build tool utility untuk SBOM generation, tidak terekspos di production runtime.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-HTTPCACHESEMANTICS-19964064:
+    - '*':
+        reason: 'Dependensi transitif build tooling dev-only, tidak ada patch resmi.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-HTTPCACHESEMANTICS-19964068:
+    - '*':
+        reason: 'Dependensi transitif build tooling dev-only, tidak ada patch resmi.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-LIBXMLJS2-6808810:
+    - '*':
+        reason: 'Dependensi transitif build-time libxmljs2, tidak ada fix upstream.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-LIBXMLJS2-6808816:
+    - '*':
+        reason: 'Dependensi transitif build-time libxmljs2, tidak ada fix upstream.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-URIJS-19963963:
+    - '*':
+        reason: 'Dependensi schema validator dev-only, tidak ada fix upstream.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-TAR-15307072:
+    - '*':
+        reason: 'Transitive package node-gyp build tooling, tidak masuk production bundle runtime.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-TAR-15416075:
+    - '*':
+        reason: 'Transitive package node-gyp build tooling, tidak masuk production bundle runtime.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-TAR-15456201:
+    - '*':
+        reason: 'Transitive package node-gyp build tooling, tidak masuk production bundle runtime.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-TAR-17909068:
+    - '*':
+        reason: 'Transitive package node-gyp build tooling, tidak masuk production bundle runtime.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-TAR-17909152:
+    - '*':
+        reason: 'Transitive package node-gyp build tooling, tidak masuk production bundle runtime.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-LODASH-1040724:
+    - '*':
+        reason: 'Sengaja dipin pada sanitize-html 1.4.2 untuk tantangan XSS & Prototype Pollution Juice Shop.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-LODASH-15869625:
+    - '*':
+        reason: 'Sengaja dipin pada sanitize-html 1.4.2 untuk tantangan XSS & Code Injection Juice Shop.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-LODASH-450202:
+    - '*':
+        reason: 'Sengaja dipin pada sanitize-html 1.4.2 untuk tantangan XSS & Prototype Pollution Juice Shop.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-LODASH-608086:
+    - '*':
+        reason: 'Sengaja dipin pada sanitize-html 1.4.2 untuk tantangan XSS & Prototype Pollution Juice Shop.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-LODASH-6139239:
+    - '*':
+        reason: 'Sengaja dipin pada sanitize-html 1.4.2 untuk tantangan XSS & Prototype Pollution Juice Shop.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-LODASH-73638:
+    - '*':
+        reason: 'Sengaja dipin pada sanitize-html 1.4.2 untuk tantangan XSS & Prototype Pollution Juice Shop.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-MOMENT-19821607:
+    - '*':
+        reason: 'Transitive dependensi dari express-jwt 0.1.3 untuk JWT challenge.'
+        expires: 2026-12-31T23:59:59.000Z
+  SNYK-JS-MOMENT-2440688:
+    - '*':
+        reason: 'Transitive dependensi dari express-jwt 0.1.3 untuk JWT challenge.'
+        expires: 2026-12-31T23:59:59.000Z
+  npm:base64url:20180511:
+    - '*':
+        reason: 'Transitive dependensi dari express-jwt 0.1.3 / jws 0.2.6 untuk JWT challenge.'
+        expires: 2026-12-31T23:59:59.000Z
+  npm:jsonwebtoken:20150331:
+    - '*':
+        reason: 'Sengaja dipertahankan untuk tantangan JWT none algorithm bypass pada Juice Shop.'
+        expires: 2026-12-31T23:59:59.000Z
+  npm:jws:20160726:
+    - '*':
+        reason: 'Sengaja dipertahankan untuk tantangan Forgeable Public/Private Tokens pada Juice Shop.'
+        expires: 2026-12-31T23:59:59.000Z
